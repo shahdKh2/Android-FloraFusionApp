@@ -5,7 +5,7 @@
             <corners android:radius="8dp" />
             <stroke
                 android:width="1dp"
-                android:color="@color/logoColor" /> <!-- Blue border color -->
+                android:color="@color/logoColor" />
         </shape>
     </item>
 </selector>
