@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackGroundColor"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="68dp"
+            android:layout_height="63dp"
+            android:layout_gravity="start"
+            android:paddingStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sunflower" />
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/font1"
+            android:paddingStart="16dp"
+            android:text="FloraFusion"
+            android:textColor="@color/logoColor"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/logoColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <!-- __________________________________________________________________  -->
+
+<!-- HERE I USED CENTERALIZED STYLE -->
+    <TextView
+        android:id="@+id/AboutFloraTextView"
+        android:layout_width="376dp"
+        android:layout_height="389dp"
+        style="@style/TextViewStyle"
+        android:layout_marginStart="16dp"
+        android:text="Welcome to FloraFusion!\nFloraFusion is an educational app designed for grade 5 students that blends interactive learning with plant science exploration. Using the sunflower plant as an example, the app teaches students about plant anatomy, including roots, stems, leaves, flowers, and fruits, through interactive diagrams and quizzes. It also delves into the plant life cycle, covering seed germination, growth, reproduction, and death, with interactive activities to aid understanding. The app's main activity serves as a hub for users, offering navigation options to explore various topics. The Plant Anatomy Activity provides detailed information and interactive content about plant parts, while the Quiz Activity tests users' knowledge with multiple-choice questions. Through (FloraFusion) grade 5 students can engage in a fun and informative learning experience about plants."
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/logoColor"
+        android:clickable="true"
+        android:fontFamily="@font/font2"
+        android:onClick="startLearning"
+        android:text="Start Learning"
+        android:textColor="@color/BackGroundColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.841" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

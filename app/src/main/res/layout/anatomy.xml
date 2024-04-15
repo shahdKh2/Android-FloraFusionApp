@@ -1,0 +1,480 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundColor">
+
+
+    <!-- -->
+
+    <!-- _____________________________________________________________________  -->
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/font1"
+        android:text="ANATOMY OF SUNFLOWER&#10;___________________________"
+        android:textColor="@color/logoColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/flowerAnatomyID"
+        android:layout_width="495dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/plant_parts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerText"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/InflorescenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Inflorescence"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerText"
+        tools:ignore="MissingConstraints" />
+
+    <!-- =====================CARDS SHOW=========================== -->
+    <TextView
+        android:id="@+id/pollenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Pollen"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InflorescenceTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/LeavesTextView"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Leaves"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pollenTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/StemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Stem"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/RootsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Roots"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeavesTextView"
+        app:layout_constraintVertical_bias="0.674"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/DiskFloreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/font2"
+        android:text="Disk floret"
+        android:textColor="@color/logoColor"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/StemTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InflorescenceTextView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!--********************************** CARDS SHOW ***************************************-->
+    <FrameLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Inflorescence Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/closeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Centralized Style Here For The Cards -->
+                    <TextView
+                        android:id="@+id/cardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Inflorescence in Sunflowers\n\n- What is Inflorescence?\nInflorescence is the arrangement of flowers on a plant.\n\n- Sunflower Inflorescence:\nSunflowers have a unique inflorescence called a 'head' or 'flower head.' The head is made up of many tiny flowers clustered together.\n\n- Parts of a Sunflower Head:\n  - Ray Florets: The yellow petals around the edge of the head are called ray florets. They look like petals but are individual flowers.\n  - Disc Florets: In the center of the head are disc florets. These are small, tube-like flowers that produce seeds.\n\n- Function of Inflorescence:\nThe inflorescence helps sunflowers attract pollinators, like bees and butterflies, which are needed for the flowers to produce seeds."
+                        style="@style/CardsStyle"
+                        />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <!-- ______________________________________________________-->
+
+    <!-- Leaves Card -->
+    <FrameLayout
+        android:id="@+id/LeavesCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- leaves Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/LeavesCloseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Centralized Style Here For The Cards -->
+                    <TextView
+                        android:id="@+id/LeavesCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leaves in Sunflowers\n\n- What are Leaves?\nLeaves are the green, flat parts of a plant that grow from the stem.\n\n- Sunflower Leaves:\nSunflower leaves are large, broad, and usually heart-shaped. They are arranged spirally on the stem.\n\n- Function of Leaves:\nThe leaves of a sunflower are important for photosynthesis, the process by which plants make food using sunlight, carbon dioxide, and water.\n\n- Adaptations:\nSunflower leaves are adapted to absorb sunlight efficiently. They are also coated with a waxy layer to reduce water loss.\n\n- Leaf Arrangement:\nSunflower leaves are arranged spirally on the stem, which helps maximize sunlight exposure for photosynthesis.\n\n- Leaf Structure:\nSunflower leaves have veins that transport water and nutrients throughout the leaf. They also have stomata, small openings that allow for gas exchange."
+                        style="@style/CardsStyle"
+                        />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <!-- ______________________________________________________-->
+
+    <!-- pollen Card -->
+    <FrameLayout
+        android:id="@+id/pollenCardLayoutt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- pollen Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/pollenCloseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Centralized Style Here For The Cards -->
+                    <TextView
+                        android:id="@+id/pollenCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollen in Sunflowers\n\n- What is Pollen?\nPollen is a fine powder produced by the male parts of flowers called stamens.\n\n- Sunflower Pollen:\nSunflower pollen is produced in the disc florets, which are the small, tube-like flowers in the center of the sunflower head.\n\n- Pollination:\nPollen is transferred from the stamens to the female parts of the flower, called pistils, during pollination. This is how plants reproduce.\n\n- Importance:\nPollen is essential for the reproduction of sunflowers and many other flowering plants. It is carried by wind, insects, or other animals to fertilize the female parts of flowers.\n\n- Allergy:\nSome people are allergic to pollen, which can cause hay fever and other respiratory symptoms."
+                        style="@style/CardsStyle"
+                        />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!-- ______________________________________________________-->
+    <!-- Root Card -->
+    <FrameLayout
+        android:id="@+id/rootCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Root Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/rootCloseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Centralized Style Here For The Cards -->
+                    <TextView
+                        android:id="@+id/rootCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Roots in Sunflowers\n\n- What are Roots?\nRoots are the underground part of a plant that anchors it in the soil and absorbs water and nutrients.\n\n- Sunflower Roots:\nSunflower roots are fibrous and spread out widely in the soil to gather water and nutrients.\n\n- Function of Roots:\nThe roots of a sunflower help anchor the plant in the soil and absorb water and nutrients from the soil.\n\n- Adaptations:\nSunflower roots have adaptations like root hairs, which increase the surface area for absorption of water and nutrients.\n\n- Root Structure:\nSunflower roots have a primary root that grows downward and lateral roots that spread out horizontally.\n\n- Importance:\nRoots are crucial for the survival of sunflowers as they provide stability and access to essential nutrients."
+                        style="@style/CardsStyle"
+                        />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <!-- ______________________________________________________-->
+    <!-- Disk Card -->
+    <FrameLayout
+        android:id="@+id/diskCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Disk Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/diskCloseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/diskCardContent"
+                        android:layout_width="match_parent"
+                        style="@style/CardsStyle"
+                        android:layout_height="wrap_content"
+                        android:text="DiskFlore in Sunflowers\n\n- What is DiskFlore?\DiskFlore is the central part of the sunflower head where the disk florets are located.\n\n- Sunflower Disk:\nThe disk of a sunflower is made up of many tiny, tubular flowers called disk florets. These florets produce seeds.\n\n- Function of Disk:\nThe disk of a sunflower plays a crucial role in reproduction by producing seeds through the disk florets.\n\n- Structure of Disk:\nThe disk of a sunflower is densely packed with disk florets, each capable of producing a seed.\n\n- Importance:\nThe disk of a sunflower is important for seed production, which is essential for the survival and reproduction of the plant."
+                        />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!-- ______________________________________________________-->
+    <!-- Stem Card -->
+    <FrameLayout
+        android:id="@+id/stemCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Stem Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logoColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <!-- Content inside the CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logoColor"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Close button -->
+                <ImageButton
+                    android:id="@+id/stemCloseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close"
+                    android:src="@drawable/x_icon" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Centralized Style Here For The Cards -->
+                    <TextView
+                        android:id="@+id/stemCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stem in Sunflowers\n\n- What is Stem?\nThe stem is the main stalk of a plant that supports the leaves, flowers, and fruits.\n\n- Sunflower Stem:\nThe stem of a sunflower is tall, sturdy, and usually covered with coarse hairs. It supports the large flower head.\n\n- Function of Stem:\nThe stem of a sunflower provides support for the plant and helps transport water and nutrients from the roots to the leaves and flowers.\n\n- Structure of Stem:\nThe stem of a sunflower is cylindrical and may have ridges. It grows upright and can reach heights of several feet.\n\n- Importance:\nThe stem of a sunflower is crucial for the plant's survival as it provides structural support and facilitates the transport of essential substances."
+                        style="@style/CardsStyle"
+                        android:textSize="35dp" />
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font2"
+        android:text="Click On Any Part You Want learn About! "
+        android:textColor="@color/logoColor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/InflorescenceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

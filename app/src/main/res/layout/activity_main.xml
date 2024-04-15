@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background color -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackGroundColor" />
+
+    <!-- Layout content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Flower image -->
+
+        <ImageView
+            android:id="@+id/flowerImageView"
+            android:layout_width="120dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sunflower" />
+
+        <Button
+            android:id="@+id/LogInButton"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/logoColor"
+            android:fontFamily="@font/font1"
+            android:text="Log In"
+            android:textColor="@color/BackGroundColor"
+            android:textSize="25sp"
+            android:clickable="true"
+            android:onClick="openLogInActivity" />
+
+        <!-- ________________________ Sign Up __________________________ -->
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/font1"
+            android:text="You Don't Have An Account Yet? Sign Up!"
+            android:textColor="@color/logoColor"
+            android:clickable="true"
+            android:onClick="openSignUpActivity" />
+
+        <!--  -->
+
+
+    </LinearLayout>
+
+    <!-- Logo text -->
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="429dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font1"
+        android:text="FloraFusion"
+        android:textColor="#224543"
+        android:textSize="50sp" />
+
+</FrameLayout>

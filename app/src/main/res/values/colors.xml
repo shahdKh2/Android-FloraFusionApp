@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="BackGroundColor">#B6D0C7</color>
+    <color name="logoColor">#224543</color>
+    <color name="flowerColor">#FE9000</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+    <!-- ========================TextViewStyle Used In AboutFloraActivity=============================================== -->
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/logoColor</item>
+        <item name="android:backgroundTint">@color/BackGroundColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/font2</item>
+    </style>
+    <!-- ========================CardsStyle Used In AnatomyActivity Cards============================ -->
+    <style name="CardsStyle">
+        <item name="android:textColor">@color/BackGroundColor</item>
+        <item name="android:backgroundTint">@color/logoColor</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:fontFamily">@font/font2</item>
+    </style>
+    <!-- =====================LogInStyle Used In LogInActivity & SignUpActivity=================== -->
+    <style name="LogInStyle">
+        <item name="android:textColor">@color/logoColor</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+</resources>
