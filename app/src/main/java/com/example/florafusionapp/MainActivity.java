@@ -22,26 +22,19 @@ public class MainActivity extends AppCompatActivity {
         rotation = ObjectAnimator.ofFloat(flowerImageView, "rotation", 0f, 360f);
         rotation.setDuration(1000); // 1 second
         rotation.setInterpolator(new LinearInterpolator());
-        rotation.setRepeatCount(ObjectAnimator.INFINITE); // Repeat indefinitely
+        rotation.setRepeatCount(0); // Play once
+        rotation.start(); // Start the rotation animation
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        // Start the rotation animation when the activity is resumed
-//        if (rotation != null && !rotation.isStarted()) {
-//            rotation.start();
-//        }
-//    }
-//
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        // Pause the rotation animation when the activity is paused
-//        if (rotation != null && rotation.isStarted()) {
-//            rotation.pause();
-//        }
-//    }
+    @Override
+    protected void onPause() { //final update 15/4
+        super.onPause();
+        // Stop the rotation animation when the activity is paused
+        if (rotation != null && rotation.isRunning()) {
+            rotation.cancel();
+        }
+    }
+
 
     public void openSignUpActivity(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);
@@ -51,16 +44,6 @@ public class MainActivity extends AppCompatActivity {
     public void openLogInActivity(View view) {
         Intent intent = new Intent(this, LogInActivity.class);
         startActivity(intent);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
     }
 
     @Override
