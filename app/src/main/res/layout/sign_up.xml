@@ -14,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/BackGroundColor"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <LinearLayout
         android:id="@+id/headerLayout"
@@ -177,16 +177,39 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/logoColor"
+        android:clickable="true"
         android:fontFamily="@font/font1"
+        android:onClick="openLogInActivity"
         android:text="Create My Account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
-        android:clickable="true"
-        android:onClick="openLogInActivity" />
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+    <CheckBox
+        android:id="@+id/GradecheckBox"
+        style="@style/LogInStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        app:buttonTint="@color/logoColor"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/LogInStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Are You in 5 Grade?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

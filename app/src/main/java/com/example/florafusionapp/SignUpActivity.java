@@ -2,11 +2,13 @@ package com.example.florafusionapp;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,7 +21,9 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText lastNameEditText;
     private EditText emailEditText;
     private EditText passwordEditText;
+    private CheckBox GradecheckBox;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +33,8 @@ public class SignUpActivity extends AppCompatActivity {
         lastNameEditText = findViewById(R.id.lastNameEditText);
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
+        GradecheckBox = findViewById(R.id.GradecheckBox);
+
     }
 
     public void openLogInActivity(View view) {
@@ -38,6 +44,8 @@ public class SignUpActivity extends AppCompatActivity {
                 emailEditText.getText().toString().isEmpty() ||
                 passwordEditText.getText().toString().isEmpty()) {
             Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+        } else if (!GradecheckBox.isChecked()) {
+            Toast.makeText(this, "This Application Designed for 5 Grade", Toast.LENGTH_SHORT).show();
         } else {
             Intent intent = new Intent(this, LogInActivity.class);
             startActivity(intent);
@@ -56,6 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onStop();
         Log.d(TAG, "onStop: SignUpActivity stopped");
     }
+
     @Override
     protected void onPause() {
         super.onPause();

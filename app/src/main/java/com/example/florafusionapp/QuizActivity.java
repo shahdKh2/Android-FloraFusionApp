@@ -41,7 +41,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
     private int[] answers = {0, 3, 1, 2, 3, 3}; // array to save the index of correct answer for each question
-    private static int score = 0; // the user score in the quiz
+    private  int score = 0; // the user score in the quiz
     private int QsNo = 6; //questions number
     private static int currRound = 0; //cuurent round nevegator
 
