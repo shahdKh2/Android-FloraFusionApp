@@ -21,10 +21,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.menu);
         //------------------------
         ListView listView = findViewById(R.id.optionsListView);
-        String[] options = {"Anatomy", "Quiz", "About FloraFusion"};
+        String[] options = {"Anatomy", "Quiz", "Game", "About FloraFusion"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, options);
         listView.setAdapter(adapter);
-
 
 
         //------------------------
@@ -45,14 +44,20 @@ public class MenuActivity extends AppCompatActivity {
                 if (selectedItem.equals("About FloraFusion")) {
                     Intent intent = new Intent(MenuActivity.this, AboutFloraActivity.class);
                     startActivity(intent);
-                }            }
+                }
+                if (selectedItem.equals("Game")) {
+                    Intent intent = new Intent(MenuActivity.this, GameActivity.class);
+                    startActivity(intent);
+                }
+            }
         });
     }
-//===============================================================
-@Override
-protected void onPause() {
-    super.onPause();
-}
+
+    //===============================================================
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 
     @Override
     protected void onResume() {

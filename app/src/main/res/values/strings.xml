@@ -1,3 +1,14 @@
-<resources>
-    <string name="app_name">FloraFusionApp</string>
-</resources>
+
+    <!-- strings.xml -->
+    <resources>
+        <string name="app_name">YourAppName</string>
+        <string name="choose_part">Choose a plant part</string>
+        <string-array name="plant_parts">
+            <item>Choose a part</item>
+            <item>Leaves</item>
+            <item>Stem</item>
+            <item>Roots</item>
+            <item>Disk floret</item>
+        </string-array>
+    </resources>
+
