@@ -206,7 +206,5 @@
         android:textSize="30dp"
         android:visibility="gone" />
 
-    <!-- The rest of your layout -->
-
 
 </LinearLayout>

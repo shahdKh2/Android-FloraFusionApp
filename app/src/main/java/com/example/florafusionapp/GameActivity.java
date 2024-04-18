@@ -146,7 +146,6 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void restartGame() {
-        // Reset the game state and UI elements to initial conditions
         resultTextView.setVisibility(View.GONE);
         tryAgainButton.setVisibility(View.GONE);
 
